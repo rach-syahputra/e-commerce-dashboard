@@ -3,10 +3,6 @@ import { Sora } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from '@/components/provider/theme-provider'
-import Container from '@/components/container/container'
-import { SidebarProvider } from '@/components/ui/sidebar'
-import { AppSidebar } from '@/components/layout/sidebar'
-import { AppNavbar } from '@/components/layout/navbar'
 
 const sora = Sora({
   variable: '--font-sora',
@@ -32,15 +28,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarProvider>
-            <Container>
-              <AppSidebar />
-              <div className='w-full'>
-                <AppNavbar />
-                <main>{children}</main>
-              </div>
-            </Container>
-          </SidebarProvider>
+          {children}
         </ThemeProvider>
       </body>
     </html>
