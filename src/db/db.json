@@ -1,0 +1,125 @@
+{
+  "products": [
+    {
+      "name": "Nike Vaporfly 3",
+      "id": "nike-vaporfly-3",
+      "description": "Catch 'em if you can. Giving you race-day speed to conquer any distance, the Nike Vaporfly 3 is made for the chasers, the racers and the elevated pacers who can't turn down the thrill of the pursuit. We reworked the leader of the super shoe pack and tuned the engine underneath to help you chase personal bests from a 10K to marathon. From elite runners to those new to racing, this versatile road-racing workhorse is for those who see speed as a gateway to more miles and more seemingly uncatchable highs.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+ZOOMX+VAPORFLY+NEXT+3-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrWk9PTVgrVkFQT1JGTFkrTkVYVCszLUEucG5nIiwiaWF0IjoxNzM1MTI1NjM2LCJleHAiOjE3Mzc3MTc2MzZ9.mMlXd5RsZerPgvzOetUmYm8LOaCUEZoarH2AW2Q24lo&t=2024-12-25T11%3A20%3A37.013Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47],
+      "price": 3399000,
+      "stock": 20
+    },
+    {
+      "name": "Nike Tiempo Legend 10 Club",
+      "id": "nike-tiempo-legend-10-club",
+      "description": "Even Legends find ways to evolve. Whether you're starting out or just playing for fun, the latest iteration of this Club boot gets you on the pitch without compromising on quality. The synthetic leather contours to your foot and doesn't overstretch, giving you better control. Lighter and sleeker than any other Tiempo to date, the Legend 10 is for any position on the pitch, whether you're sending a pinpoint pass through the defence or tracking back to stop a break-away.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/LEGEND+10+CLUB+FG_MG-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL0xFR0VORCsxMCtDTFVCK0ZHX01HLUEucG5nIiwiaWF0IjoxNzM1MTI1ODk0LCJleHAiOjE3Mzc3MTc4OTR9.7VCHFN8_DHzagzyGcyaTPgbtx5CxDwqBTxtK8CrdH6w&t=2024-12-25T11%3A24%3A54.862Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47],
+      "price": 799000,
+      "stock": 20
+    },
+    {
+      "name": "NikeCourt Vapor 11 HC Premium",
+      "id": "nike-court-vapor-11-hc-premium",
+      "description": "Lower to the court and loaded with speed components, the Vapor 11 helps you play at a fast pace with enough support for your match. Mainstays like the moulded sidewall and breathable upper complement the durable, quick-moving design that you've come to know and love. This version has graphics that nod to NYC's legendary tournament.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/M+NIKE+ZOOM+VAPOR+11+HC+PRM-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL00rTklLRStaT09NK1ZBUE9SKzExK0hDK1BSTS1BLnBuZyIsImlhdCI6MTczNTEyNjA5OSwiZXhwIjoxNzM3NzE4MDk5fQ.USvaKr5FOysM8l_JGtR1m0oH5w-Fy2DrhGSmrIJ36Gc&t=2024-12-25T11%3A28%3A20.255Z",
+
+      "sizes": [44],
+      "price": 2669000,
+      "stock": 4
+    },
+    {
+      "name": "Nike Phantom Luna 2 Elite Electric",
+      "id": "nike-phantom-luna-2-elite-electric",
+      "description": "Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch, thanks to your uncanny mix of on-ball guile and grace. Go and finish the job in the Phantom Luna 2 Elite. Revolutionary Nike Gripknit covers the striking area of the boot while Nike Cyclone 360 traction helps guide your unscripted agility. We design Elite boots for you and the world's biggest stars to give you high-level quality, because you demand greatness from yourself and your footwear.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/PHANTOM+LUNA+II+ELITE+FG-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL1BIQU5UT00rTFVOQStJSStFTElURStGRy1BLnBuZyIsImlhdCI6MTczNTE0NzUyNSwiZXhwIjoxNzM3NzM5NTI1fQ.PRPTkE6vpzleoWUqLQGaqMiiUOoPJnygDRZ60V_T6lc&t=2024-12-25T17%3A25%3A26.080Z",
+      "sizes": [41, 42, 43, 44],
+      "price": 4539000,
+      "stock": 20
+    },
+    {
+      "name": "Nike Mercurial Superfly 10 Elite",
+      "id": "nike-mercurial-superfly-10-elite",
+      "description": "Obsessed with speed? So are the game's biggest stars. That's why we made this Elite boot with an improved 3/4-length Air Zoom unit. It gives you and the sport's fastest players the propulsive feel needed to break through the back line. The result is the most responsive Mercurial we've ever made, because you demand greatness from yourself and your footwear.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/ZM+SUPERFLY+10+ELITE+FG-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL1pNK1NVUEVSRkxZKzEwK0VMSVRFK0ZHLUEucG5nIiwiaWF0IjoxNzM1MTQ3NzY1LCJleHAiOjE3Mzc3Mzk3NjV9.LpfN9o_TOwF_3z7NRrqRJm0k6EdGc3ltDOFBtTpyu3I&t=2024-12-25T17%3A29%3A26.248Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 46],
+      "price": 4329000,
+      "stock": 22
+    },
+    {
+      "name": "Nike Pegasus 41",
+      "id": "nike-pegasus-41",
+      "description": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/AIR+ZOOM+PEGASUS+41-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL0FJUitaT09NK1BFR0FTVVMrNDEtQS5wbmciLCJpYXQiOjE3MzUxNDgwMDQsImV4cCI6MTczNzc0MDAwNH0.RrkQiIJEIaXjWMgoPez0L5icK06NHeKx8g0Kxvzu9PY&t=2024-12-25T17%3A33%3A25.275Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 47],
+      "price": 2099000,
+      "stock": 8
+    },
+    {
+      "name": "Nike Air Max Correlate",
+      "id": "nike-air-max-correlate",
+      "description": "The Air Max Correlate brings you a throwback design with modern updates. The rich mix of materials echoes early '90s style, while visible Max Air cushioning adds comfort that lasts.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+AIR+MAX+CORRELATE-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrQUlSK01BWCtDT1JSRUxBVEUtQS5wbmciLCJpYXQiOjE3MzUxNDgzNDUsImV4cCI6MTczNzc0MDM0NX0.lvd9AP73F3Y6fjOfnJ3U_gnu4reU4Tkre-J2lV37b3I&t=2024-12-25T17%3A39%3A05.835Z",
+      "sizes": [40, 41, 42],
+      "price": 1549000,
+      "stock": 11
+    },
+    {
+      "name": "Nike Air Max Command",
+      "id": "nike-air-max-command",
+      "description": "The Nike Air Max Command offers stability with plenty of cushioning. A mix of leather, textile and synthetic materials on the upper provide comfort, while a Waffle outsole gives you durable multi-surface traction.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/AIR+MAX+COMMAND-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL0FJUitNQVgrQ09NTUFORC1BLnBuZyIsImlhdCI6MTczNTE0ODY1MSwiZXhwIjoxNzM3NzQwNjUxfQ.Y4UHsu44uVTWirww8-dIeHFPBMCF3a1D6jtfJV9-dlc&t=2024-12-25T17%3A44%3A12.366Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47],
+      "price": 1909000,
+      "stock": 19
+    },
+    {
+      "name": "Nike Air Max 2017",
+      "id": "nike-air-max-2017",
+      "description": "The Nike Air Max 2017 delivers the plush sensation you love with a full-length Max Air unit.The upper is seamlessly constructed with zonal support and ventilation while moulded foam wraps your midfoot and heel for secure comfort.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+AIR+MAX+2017-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrQUlSK01BWCsyMDE3LUEucG5nIiwiaWF0IjoxNzM1MTQ4ODQ3LCJleHAiOjE3Mzc3NDA4NDd9.xIKIAz0glaVqJw-6LHqYyJWGvEx3w7lhnx9PxRisfLY&t=2024-12-25T17%3A47%3A28.297Z",
+      "sizes": [40, 41, 42, 43, 44, 45],
+      "price": 3169000,
+      "stock": 15
+    },
+    {
+      "name": "Nike Ebernon Low Premium",
+      "id": "nike-ebernon-low-premium",
+      "description": "Capturing the look and feel of '80s basketball style, the Ebernon features a sleek silhouette with durable traction. Stitched overlays echo the design of retro hoops models for unmistakable court style.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+EBERNON+LOW+PREM-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrRUJFUk5PTitMT1crUFJFTS1BLnBuZyIsImlhdCI6MTczNTE0OTA3NywiZXhwIjoxNzM3NzQxMDc3fQ.r3UDIUT4T-tiHlgWv-CCGJLDBDJyDlmQQEL444Istt8&t=2024-12-25T17%3A51%3A18.232Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47],
+      "price": 1149000,
+      "stock": 21
+    },
+    {
+      "name": "Nike Flight Legacy",
+      "id": "nike-flight-legacy",
+      "description": "Inspired by basketball shoes from the late '80s, the Nike Flight Legacy updates a classic look for modern times. Lightweight cushioning and a full rubber outsole give you retro design details and modern comfort.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+FLIGHT+LEGACY-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrRkxJR0hUK0xFR0FDWS1BLnBuZyIsImlhdCI6MTczNTE0OTMzMywiZXhwIjoxNzM3NzQxMzMzfQ.7ni9yOYJvQ_4cHNoArRWhuALdsHOypbMvc5jOTZYP8E&t=2024-12-25T17%3A55%3A34.366Z",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47],
+      "price": 1399000,
+      "stock": 4
+    },
+    {
+      "name": "Nike Revolution 6",
+      "id": "nike-revolution-6",
+      "description": "Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride. It's an evolution of a favourite, with a breathable design made with at least 20% recycled content by weight.",
+      "category": "shoes",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "sizes": [46, 47],
+      "price": 799000,
+      "stock": 7
+    }
+  ]
+}
