@@ -1,0 +1,69 @@
+'use client'
+
+import * as React from 'react'
+import { usePathname } from 'next/navigation'
+
+import { cn } from '@/lib/utils'
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList
+} from '@/components/ui/navigation-menu'
+import Header from '../header/header'
+import AppAvatar from '../avatar'
+import { ThemeToggle } from '../ui/theme-toggle'
+import { Skeleton } from '../ui/skeleton'
+
+export function AppNavbar() {
+  const pathname = usePathname()
+  const pageHeader = pathname.split('/').pop() || 'dashboard'
+
+  return (
+    <NavigationMenu className='h-14 w-full justify-between border-b px-4'>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          {pathname ? (
+            <Header>{pageHeader}</Header>
+          ) : (
+            <Skeleton className='h-7 w-60' />
+          )}
+        </NavigationMenuItem>
+      </NavigationMenuList>
+      <NavigationMenuList className='gap-2'>
+        <NavigationMenuItem>
+          <ThemeToggle />
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <AppAvatar />
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  )
+}
+
+const ListItem = React.forwardRef<
+  React.ElementRef<'a'>,
+  React.ComponentPropsWithoutRef<'a'>
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+            className
+          )}
+          {...props}
+        >
+          <div className='text-sm font-medium leading-none'>{title}</div>
+          <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = 'ListItem'
