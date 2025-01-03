@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import {
+  Boxes,
   ChartColumnDecreasing,
   LayoutDashboard,
-  Shirt,
   ShoppingCart,
   SquareChartGantt,
   StretchHorizontal,
@@ -34,7 +34,7 @@ const managementItems = [
   {
     title: 'Products',
     url: '/products',
-    icon: Shirt
+    icon: Boxes
   },
   {
     title: 'Categories',
