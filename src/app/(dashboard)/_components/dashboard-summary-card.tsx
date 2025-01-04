@@ -32,7 +32,7 @@ const DashboardSummaryCard = (props: DashboardSummaryCardProps) => {
           <props.icon size={14} color='gray' />
         </div>
         <CardDescription>
-          <Paragraph className='text-2xl font-bold'>
+          <Paragraph className='text-xl font-bold sm:text-2xl'>
             {props.description}
           </Paragraph>
         </CardDescription>
