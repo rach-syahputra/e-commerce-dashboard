@@ -3,27 +3,35 @@ export interface IUserJson {
   name: string
   email: string
   image: string
+  role: 'admin' | 'cashier' | 'user'
+  createdAt: string
+  updatedAt: string
 }
 
 export interface IProductJson {
   id: string
   name: string
   description: string
-  category: string
+  categoryId: string
   image: string
-  sizes: number[]
   price: number
   stock: number
+  createdAt: string
+  updatedAt: string
 }
 
 export interface ICategoryJson {
   id: string
   title: string
+  createdAt: string
 }
 
 export interface IOrderJson {
   id: string
-  user_id: string
-  total_amount: number
-  status: 'pending' | 'paid' | 'shipped' | 'completed'
+  userId: string
+  productId: string
+  totalPrice: number
+  status: 'pending' | 'shipped' | 'completed'
+  createdAt: string
+  updatedAt: string
 }
