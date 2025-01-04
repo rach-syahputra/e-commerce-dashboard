@@ -34,3 +34,13 @@ export const filterDataByMonth = <T extends { createdAt: string }>(
     return itemDate.getMonth() === month && itemDate.getFullYear() === year
   })
 }
+
+export const formatToRupiah = (amount: number): string => {
+  const formattedAmount = new Intl.NumberFormat('id-ID', {
+    style: 'currency',
+    currency: 'IDR',
+    minimumFractionDigits: 0
+  }).format(amount)
+
+  return formattedAmount
+}
