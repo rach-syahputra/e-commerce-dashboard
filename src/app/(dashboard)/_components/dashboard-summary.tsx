@@ -107,28 +107,39 @@ const DashboardSummary = () => {
   const getSales = async () => {
     const res: IOrderJson[] = await fetchAllOrder()
 
-    const totalSale = res
+    // Find current month and last month data
+    const currentMonthOrders = filterDataByMonth(res, 'currentMonth')
+    const lastMonthOrders = filterDataByMonth(res, 'lastMonth')
+
+    const totalSales = res
       .filter(
         (item) => item.status === 'completed' || item.status === 'shipped'
       )
       .reduce((total, item) => total + item.totalPrice, 0)
 
-    // Find current month and last month data
-    const currentMonthOrders = filterDataByMonth(res, 'currentMonth')
-    const lastMonthOrders = filterDataByMonth(res, 'lastMonth')
+    const totalSalesCurrentMonth = currentMonthOrders
+      .filter(
+        (item) => item.status === 'completed' || item.status === 'shipped'
+      )
+      .reduce((total, item) => total + item.totalPrice, 0)
+
+    const totalSalesLastMonth = lastMonthOrders
+      .filter(
+        (item) => item.status === 'completed' || item.status === 'shipped'
+      )
+      .reduce((total, item) => total + item.totalPrice, 0)
 
     if (lastMonthOrders.length === 0) {
       return {
-        total: totalSale || 0,
-        growth: currentMonthOrders.length > 0 ? 100 : 0
+        total: totalSales || 0,
+        growth: totalSalesCurrentMonth > 0 ? 100 : 0
       }
     }
 
     return {
-      total: totalSale || 0,
+      total: totalSales || 0,
       growth: Math.round(
-        ((currentMonthOrders.length - lastMonthOrders.length) /
-          lastMonthOrders.length) *
+        ((totalSalesCurrentMonth - totalSalesLastMonth) / totalSalesLastMonth) *
           100
       )
     }
@@ -161,25 +172,25 @@ const DashboardSummary = () => {
   return (
     <div className='grid grid-cols-2 gap-4 lg:grid-cols-3'>
       <DashboardSummaryCard
-        title='Total Sale'
+        title='Total Sales'
         description={formatToRupiah(summary.sale.total)}
         growth={{ amount: summary.sale.growth || 0, format: 'percentage' }}
         icon={UsersRound}
       />
       <DashboardSummaryCard
-        title='Total User'
+        title='Total Users'
         description={summary.user.total.toString()}
         growth={{ amount: summary.user.growth || 0, format: 'percentage' }}
         icon={UsersRound}
       />
       <DashboardSummaryCard
-        title='Total Product'
+        title='Total Products'
         description={summary.product.total.toString()}
         growth={{ amount: summary.product.growth || 0, format: 'count' }}
         icon={Boxes}
       />
       <DashboardSummaryCard
-        title='Total Order'
+        title='Total Orders'
         description={summary.order.total.toString()}
         growth={{ amount: summary.order.growth || 0, format: 'percentage' }}
         icon={ShoppingCart}
