@@ -17,7 +17,9 @@ import {
   SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem
+  SidebarMenuItem,
+  SidebarTrigger,
+  useSidebar
 } from '../ui/sidebar'
 import { usePathname } from 'next/navigation'
 
@@ -61,12 +63,20 @@ const managementItems = [
 
 const AppSidebarMenu = () => {
   const pathname = usePathname()
+  const { open } = useSidebar()
 
   return (
     <SidebarGroup className='py-0'>
       <SidebarGroupContent>
         <SidebarGroupLabel>Management</SidebarGroupLabel>
         <SidebarMenu>
+          {!open && (
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild className='py-6'>
+                <SidebarTrigger />
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          )}
           {managementItems.map((item) => (
             <SidebarMenuItem key={item.title}>
               <SidebarMenuButton

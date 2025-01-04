@@ -1,13 +1,27 @@
-import { Sidebar, SidebarContent } from '@/components/ui/sidebar'
+'use client'
+
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarTrigger,
+  useSidebar
+} from '@/components/ui/sidebar'
 import AppSidebarMenu from './sidebar-menu'
 
 export function AppSidebar() {
+  const { open } = useSidebar()
+
   return (
-    <Sidebar className='border-r'>
+    <Sidebar collapsible='icon' className='border-r'>
       <SidebarContent>
-        <span className='flex h-14 select-none items-center px-4 text-xl font-bold'>
-          E-COMMERCE
-        </span>
+        {open && (
+          <div className='flex h-14 items-center justify-between px-4'>
+            <span className='line-clamp-1 select-none text-xl font-bold'>
+              E-COMMERCE
+            </span>
+            <SidebarTrigger />
+          </div>
+        )}
         <AppSidebarMenu />
       </SidebarContent>
     </Sidebar>

@@ -9,7 +9,8 @@ import {
   fetchAllUser
 } from '@/lib/api/services'
 import { IOrderJson, IProductJson, IUserJson } from '@/lib/types/json'
-import { filterDataByMonth, formatToRupiah } from '@/lib/utils'
+import { cn, filterDataByMonth, formatToRupiah } from '@/lib/utils'
+import { useSidebar } from '@/components/ui/sidebar'
 import DashboardSummaryCard from './dashboard-summary-card'
 
 type SummaryType = {
@@ -25,6 +26,7 @@ interface ISummary {
 }
 
 const DashboardSummary = () => {
+  const { open } = useSidebar()
   const [summary, setSummary] = useState<ISummary>({
     user: {
       total: 0,
@@ -170,7 +172,11 @@ const DashboardSummary = () => {
   }, [])
 
   return (
-    <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+    <div
+      className={cn('grid gap-4 sm:grid-cols-2 lg:grid-cols-3', {
+        'lg:grid-cols-4': !open
+      })}
+    >
       <DashboardSummaryCard
         title='Total Sales'
         description={formatToRupiah(summary.sale.total)}
