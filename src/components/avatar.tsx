@@ -1,3 +1,6 @@
+'use client'
+
+import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 
 import Paragraph from './paragraph/paragraph'
@@ -13,19 +16,26 @@ import {
 } from './ui/dropdown-menu'
 
 const AppAvatar = () => {
+  const { data: session } = useSession()
+
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Avatar className='cursor-pointer'>
-          <AvatarImage src='https://github.com/shadcn.png' alt='@shadcn' />
+          <AvatarImage
+            src={session?.user.image || 'https://github.com/shadcn.png'}
+            alt='Admin image'
+          />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end' className='w-56'>
         <DropdownMenuLabel className='flex flex-col'>
-          <Paragraph className='text-sm font-normal'>Shira</Paragraph>
+          <Paragraph className='text-sm font-normal'>
+            {session?.user.name}
+          </Paragraph>
           <SubParagraph className='text-xs font-normal'>
-            shira@example.com
+            {session?.user.email}
           </SubParagraph>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
@@ -36,7 +46,9 @@ const AppAvatar = () => {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <button className='text-destructive'>Logout</button>
+          <button onClick={() => signOut()} className='text-destructive'>
+            Logout
+          </button>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
