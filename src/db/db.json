@@ -5,7 +5,7 @@
       "name": "nadiya",
       "email": "nadiya@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/90.jpg",
       "role": "user",
       "createdAt": "2024-10-15T10:00:00Z",
       "updatedAt": "2024-10-15T10:00:00Z"
@@ -13,9 +13,9 @@
     {
       "id": "2",
       "name": "zevanya",
-      "email": "zevanya@example.com",
-      "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "email": "admin@example.com",
+      "password": "admin2345",
+      "image": "https://randomuser.me/api/portraits/women/17.jpg",
       "role": "admin",
       "createdAt": "2024-10-20T14:00:00Z",
       "updatedAt": "2024-10-20T14:00:00Z"
@@ -25,7 +25,7 @@
       "name": "shira",
       "email": "shira@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/57.jpg",
       "role": "user",
       "createdAt": "2024-11-01T09:00:00Z",
       "updatedAt": "2024-11-01T09:00:00Z"
@@ -35,7 +35,7 @@
       "name": "purta",
       "email": "purta@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/11.jpg",
       "role": "user",
       "createdAt": "2024-11-10T08:30:00Z",
       "updatedAt": "2024-11-10T08:30:00Z"
@@ -45,7 +45,7 @@
       "name": "ariska",
       "email": "ariska@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/40.jpg",
       "role": "user",
       "createdAt": "2024-11-15T15:45:00Z",
       "updatedAt": "2024-11-15T15:45:00Z"
@@ -55,7 +55,7 @@
       "name": "dhiya",
       "email": "dhiya@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/71.jpg",
       "role": "user",
       "createdAt": "2024-11-20T10:00:00Z",
       "updatedAt": "2024-11-20T10:00:00Z"
@@ -65,7 +65,7 @@
       "name": "hayati",
       "email": "hayati@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/54.jpg",
       "role": "user",
       "createdAt": "2024-11-25T12:00:00Z",
       "updatedAt": "2024-11-25T12:00:00Z"
@@ -75,7 +75,7 @@
       "name": "laila",
       "email": "laila@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/10.jpg",
       "role": "user",
       "createdAt": "2024-12-01T10:00:00Z",
       "updatedAt": "2024-12-01T10:00:00Z"
@@ -85,7 +85,7 @@
       "name": "nara",
       "email": "nara@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/65.jpg",
       "role": "user",
       "createdAt": "2024-12-05T14:00:00Z",
       "updatedAt": "2024-12-05T14:00:00Z"
@@ -95,7 +95,7 @@
       "name": "dian",
       "email": "dian@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/91.jpg",
       "role": "user",
       "createdAt": "2024-12-10T09:30:00Z",
       "updatedAt": "2024-12-10T09:30:00Z"
@@ -105,7 +105,7 @@
       "name": "gina",
       "email": "gina@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/24.jpg",
       "role": "user",
       "createdAt": "2024-12-15T13:00:00Z",
       "updatedAt": "2024-12-15T13:00:00Z"
@@ -115,7 +115,7 @@
       "name": "fadia",
       "email": "fadia@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/51.jpg",
       "role": "user",
       "createdAt": "2025-01-01T09:00:00Z",
       "updatedAt": "2025-01-01T09:00:00Z"
@@ -125,7 +125,7 @@
       "name": "hania",
       "email": "hania@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/79.jpg",
       "role": "user",
       "createdAt": "2025-01-01T09:00:00Z",
       "updatedAt": "2025-01-01T09:00:00Z"
@@ -135,7 +135,7 @@
       "name": "zaira",
       "email": "zaira@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/33.jpg",
       "role": "user",
       "createdAt": "2025-01-01T09:00:00Z",
       "updatedAt": "2025-01-01T09:00:00Z"
@@ -145,7 +145,7 @@
       "name": "nisa",
       "email": "nisa@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/50.jpg",
       "role": "user",
       "createdAt": "2025-01-01T09:00:00Z",
       "updatedAt": "2025-01-01T09:00:00Z"
@@ -155,7 +155,7 @@
       "name": "khalida",
       "email": "khalida@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/53.jpg",
       "role": "user",
       "createdAt": "2025-01-05T15:00:00Z",
       "updatedAt": "2025-01-05T15:00:00Z"
@@ -165,7 +165,7 @@
       "name": "zahra",
       "email": "zahra@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/49.jpg",
       "role": "user",
       "createdAt": "2025-01-10T16:00:00Z",
       "updatedAt": "2025-01-10T16:00:00Z"
@@ -175,7 +175,7 @@
       "name": "amira",
       "email": "amira@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/80.jpg",
       "role": "user",
       "createdAt": "2025-01-15T12:30:00Z",
       "updatedAt": "2025-01-15T12:30:00Z"
@@ -185,7 +185,7 @@
       "name": "farah",
       "email": "farah@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/92.jpg",
       "role": "user",
       "createdAt": "2025-01-20T11:00:00Z",
       "updatedAt": "2025-01-20T11:00:00Z"
@@ -195,7 +195,7 @@
       "name": "azra",
       "email": "azra@example.com",
       "password": "77772345",
-      "image": "https://github.com/shadcn.png",
+      "image": "https://randomuser.me/api/portraits/women/9.jpg",
       "role": "user",
       "createdAt": "2025-01-25T10:45:00Z",
       "updatedAt": "2025-01-25T10:45:00Z"
