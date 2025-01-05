@@ -16,7 +16,7 @@
       "email": "zevanya@example.com",
       "password": "77772345",
       "image": "https://github.com/shadcn.png",
-      "role": "user",
+      "role": "admin",
       "createdAt": "2024-10-20T14:00:00Z",
       "updatedAt": "2024-10-20T14:00:00Z"
     },
