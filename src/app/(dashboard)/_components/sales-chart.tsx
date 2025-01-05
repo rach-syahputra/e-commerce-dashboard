@@ -86,7 +86,7 @@ const SalesChart = ({ className }: SalesChartProps) => {
         // Add non-duplicate year of compteled order
         if (!years.includes(year)) years.push(year)
 
-        // Initial salesByYear data
+        // Initialize salesByYear data
         if (!salesByYear[year])
           salesByYear[year] = months.map((month) => ({ month, amount: 0 }))
 
@@ -111,9 +111,9 @@ const SalesChart = ({ className }: SalesChartProps) => {
   }, [])
 
   return (
-    <Card className={cn('px-4 pb-4', className)}>
-      <CardHeader className='flex flex-row items-center justify-between px-0 py-4'>
-        <CardTitle className='text-sm font-normal'>Sales Overview</CardTitle>
+    <Card className={cn('p-4 md:p-6', className)}>
+      <CardHeader className='flex flex-row items-start justify-between p-0'>
+        <CardTitle className='text-sm font-semibold'>Sales Overview</CardTitle>
         <div className='flex items-center justify-center gap-2'>
           <Button
             variant='ghost'
@@ -146,7 +146,10 @@ const SalesChart = ({ className }: SalesChartProps) => {
           </DropdownMenu>
         </div>
       </CardHeader>
-      <ChartContainer config={chartConfig} className='min-h-[300px] w-full'>
+      <ChartContainer
+        config={chartConfig}
+        className='h-[320px] min-h-[300px] w-full'
+      >
         <BarChart
           accessibilityLayer
           data={
