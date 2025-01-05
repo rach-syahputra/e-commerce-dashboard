@@ -16,7 +16,7 @@ export function AppSidebar() {
       <SidebarContent>
         {open && (
           <div className='flex h-14 items-center justify-between px-4'>
-            <span className='line-clamp-1 select-none text-xl font-bold'>
+            <span className='line-clamp-1 select-none text-base font-bold lg:text-xl'>
               E-COMMERCE
             </span>
             <SidebarTrigger />
