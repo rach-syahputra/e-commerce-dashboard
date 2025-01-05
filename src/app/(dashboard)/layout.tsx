@@ -12,7 +12,7 @@ export default function DashboardLayout({
     <SidebarProvider>
       <Container>
         <AppSidebar />
-        <div className='w-full'>
+        <div className='min-h-screen w-full'>
           <AppNavbar />
           <main>{children}</main>
         </div>
