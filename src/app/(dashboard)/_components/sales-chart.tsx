@@ -24,6 +24,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
+import SalesChartSkeleton from './loading/sales-chart-skeleton'
 
 type SalesChartProps = {
   className?: string
@@ -109,6 +110,8 @@ const SalesChart = ({ className }: SalesChartProps) => {
   useEffect(() => {
     getSales()
   }, [])
+
+  if (!selectedYear) return <SalesChartSkeleton className='col-span-3' />
 
   return (
     <Card className={cn('p-4 md:p-6', className)}>
