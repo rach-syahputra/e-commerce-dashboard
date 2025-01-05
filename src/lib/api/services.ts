@@ -1,5 +1,25 @@
 const BASE_URL = 'http://localhost:3004'
 
+export const fetchUserByEmailAndPassword = async ({
+  email,
+  password
+}: {
+  email: string
+  password: string
+}) => {
+  const res = await fetch(
+    `${BASE_URL}/users?email=${email}&password=${password}`,
+    {
+      method: 'GET',
+      next: {
+        revalidate: 0
+      }
+    }
+  )
+
+  return await res.json()
+}
+
 export const fetchAllUser = async () => {
   const res = await fetch(`${BASE_URL}/users`)
 
