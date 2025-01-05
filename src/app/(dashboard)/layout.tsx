@@ -1,3 +1,5 @@
+import { SessionProvider } from 'next-auth/react'
+
 import Container from '@/components/container/container'
 import { SidebarProvider } from '@/components/ui/sidebar'
 import { AppSidebar } from '@/components/layout/sidebar'
@@ -9,14 +11,16 @@ export default function DashboardLayout({
   children: React.ReactNode
 }>) {
   return (
-    <SidebarProvider>
-      <Container>
-        <AppSidebar />
-        <div className='min-h-screen w-full'>
-          <AppNavbar />
-          <main>{children}</main>
-        </div>
-      </Container>
-    </SidebarProvider>
+    <SessionProvider>
+      <SidebarProvider>
+        <Container>
+          <AppSidebar />
+          <div className='min-h-screen w-full'>
+            <AppNavbar />
+            <main>{children}</main>
+          </div>
+        </Container>
+      </SidebarProvider>
+    </SessionProvider>
   )
 }
