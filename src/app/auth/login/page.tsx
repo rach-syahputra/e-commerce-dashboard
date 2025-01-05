@@ -67,7 +67,11 @@ const LoginForm = () => {
               <FormItem className='w-full'>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder='user@example.com' {...field} />
+                  <Input
+                    type='text'
+                    placeholder='user@example.com'
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -81,7 +85,7 @@ const LoginForm = () => {
               <FormItem className='w-full'>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input placeholder='********' {...field} />
+                  <Input type='password' placeholder='********' {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
