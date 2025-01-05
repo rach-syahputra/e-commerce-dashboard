@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { usePathname } from 'next/navigation'
 
+import { useIsMobile } from '@/hooks/use-mobile'
 import { cn } from '@/lib/utils'
 import {
   NavigationMenu,
@@ -14,14 +15,21 @@ import Header from '../header/header'
 import AppAvatar from '../avatar'
 import { ThemeToggle } from '../ui/theme-toggle'
 import { Skeleton } from '../ui/skeleton'
+import { SidebarTrigger } from '../ui/sidebar'
 
 export function AppNavbar() {
   const pathname = usePathname()
+  const isMobile = useIsMobile()
   const pageHeader = pathname.split('/').pop() || 'dashboard'
 
   return (
     <NavigationMenu className='h-14 w-full justify-between border-b px-4'>
       <NavigationMenuList>
+        {isMobile && (
+          <NavigationMenuItem>
+            <SidebarTrigger />
+          </NavigationMenuItem>
+        )}
         <NavigationMenuItem>
           {pathname ? (
             <Header>{pageHeader}</Header>
