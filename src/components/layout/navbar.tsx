@@ -23,7 +23,7 @@ export function AppNavbar() {
   const pageHeader = pathname.split('/').pop() || 'dashboard'
 
   return (
-    <NavigationMenu className='h-14 w-full justify-between border-b px-4'>
+    <NavigationMenu className='sticky top-0 h-14 w-full justify-between border-b bg-background px-4'>
       <NavigationMenuList>
         {isMobile && (
           <NavigationMenuItem>
