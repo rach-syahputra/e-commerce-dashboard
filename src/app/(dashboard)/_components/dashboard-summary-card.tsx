@@ -43,14 +43,14 @@ const DashboardSummaryCard = (props: DashboardSummaryCardProps) => {
                 +{props.growth.amount}% from last month
               </SubParagraph>
             ) : (
-              <SubParagraph className='text-xs text-red-600 dark:text-red-600'>
+              <SubParagraph className='text-xs text-destructive dark:text-destructive'>
                 {props.growth.amount}% from last month
               </SubParagraph>
             )}
           </CardDescription>
         ) : (
           <CardDescription>
-            <SubParagraph className='text-xs text-green-600 dark:text-green-600'>
+            <SubParagraph className='text-success dark:text-success text-xs'>
               +{props.growth.amount} this month
             </SubParagraph>
           </CardDescription>
