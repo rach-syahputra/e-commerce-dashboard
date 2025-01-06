@@ -1,9 +1,11 @@
+import { UserRoleType } from './types'
+
 export interface IUserJson {
   id: string
   name: string
   email: string
   image: string
-  role: 'admin' | 'cashier' | 'user'
+  role: UserRoleType
   createdAt: string
   updatedAt: string
 }

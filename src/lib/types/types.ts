@@ -11,3 +11,5 @@ export type MonthType =
   | 'October'
   | 'November'
   | 'December'
+
+export type UserRoleType = 'admin' | 'user' | 'cashier'
