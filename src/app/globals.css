@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* this styles fix Dialog and Select components ui bug which forces body scroll to be hidden and cause layout shifting when opening DialogMenu or SelectMenu  */
+
 html {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  min-width: 100% !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
+
+body[data-scroll-locked][data-scroll-locked] {
+  overflow: auto !important;
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+/*  */
 
 @layer base {
   :root {
