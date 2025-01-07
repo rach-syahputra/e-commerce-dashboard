@@ -1,5 +1,5 @@
 import PageContainer from '@/components/container/page-container'
-import UsersChart from './_components/users-chart'
+import UsersChart from './_components/user-chart'
 import UsersSummary from './_components/users-summary'
 
 export default function UsersOverviewPage() {

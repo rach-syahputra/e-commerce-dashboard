@@ -1,5 +1,5 @@
 import PageContainer from '@/components/container/page-container'
-import ProductsChart from './_components/products-chart'
+import ProductsChart from './_components/product-chart'
 import ProductsSummary from './_components/products-summary'
 
 const ProductsOverview = () => {

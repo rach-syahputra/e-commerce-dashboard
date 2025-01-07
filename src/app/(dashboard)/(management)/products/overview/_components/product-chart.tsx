@@ -74,7 +74,7 @@ const ProductsChart = ({ className }: ProductsChartProps) => {
 
   return (
     <DataChart
-      title='Products Growth'
+      title='Product Growth'
       label='Total'
       chart={{ data: products, existYears, selectedYear }}
       className={className}
