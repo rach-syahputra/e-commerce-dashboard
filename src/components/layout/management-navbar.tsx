@@ -32,17 +32,20 @@ const ManagementNavbar = ({ menus }: ManagementNavbarProps) => {
             const isActive = pathname === menu.href
 
             return (
-              <NavigationMenuItem
-                key={index}
-                className={cn(
-                  'rounded-sm px-3 py-1 text-sm font-medium text-zinc-400 transition-all duration-300 ease-in-out hover:bg-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700',
-                  {
-                    'bg-white text-gray-900 shadow-sm hover:bg-white dark:bg-background dark:text-white dark:hover:bg-background':
-                      isActive
-                  }
-                )}
-              >
-                <Link href={menu.href}>{menu.label}</Link>
+              <NavigationMenuItem key={index}>
+                <Link
+                  href={menu.href}
+                  aria-label={`${menu.label} page`}
+                  className={cn(
+                    'rounded-sm px-3 py-1 text-sm font-medium text-zinc-400 transition-all duration-300 ease-in-out hover:bg-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700',
+                    {
+                      'bg-white text-gray-900 shadow-sm hover:bg-white dark:bg-background dark:text-white dark:hover:bg-background':
+                        isActive
+                    }
+                  )}
+                >
+                  {menu.label}
+                </Link>
               </NavigationMenuItem>
             )
           })}
