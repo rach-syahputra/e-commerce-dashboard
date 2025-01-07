@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'E-commerce User Management.'
 }
 
-export default function ManagementLayout({
+export default function UserManagementLayout({
   children
 }: Readonly<{
   children: React.ReactNode
