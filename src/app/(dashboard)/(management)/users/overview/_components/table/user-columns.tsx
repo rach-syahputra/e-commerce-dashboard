@@ -14,7 +14,8 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
-import UserDetailModal from '../user-detail-modal'
+import UserDetailModal from '../modal/user-detail-modal'
+import EditUserModal from '../modal/edit-user-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -165,6 +166,9 @@ export const userColumns: ColumnDef<UserTable>[] = [
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
                 <UserDetailModal user={row.original} />
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <EditUserModal user={row.original} />
               </DropdownMenuItem>
               <DropdownMenuItem className='text-destructive'>
                 Delete

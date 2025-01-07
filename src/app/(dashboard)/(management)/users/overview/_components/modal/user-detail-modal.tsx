@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
-import { UserTable } from './table/user-columns'
+import { UserTable } from '../table/user-columns'
 
 type UserDetailModalProps = {
   user: UserTable
@@ -22,7 +22,10 @@ const UserDetailModal = ({ user }: UserDetailModalProps) => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant='ghost' className='w-full justify-start px-2'>
+        <Button
+          variant='ghost'
+          className='w-full justify-start px-2 font-normal'
+        >
           View detail
         </Button>
       </DialogTrigger>
