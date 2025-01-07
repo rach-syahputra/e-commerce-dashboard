@@ -31,32 +31,32 @@ const managementItems = [
   },
   {
     title: 'Users',
-    url: '/users',
+    url: '/users/overview',
     icon: UserRound
   },
   {
     title: 'Products',
-    url: '/products',
+    url: '/products/overview',
     icon: Boxes
   },
   {
     title: 'Categories',
-    url: '/categories',
+    url: '/categories/overview',
     icon: StretchHorizontal
   },
   {
     title: 'Orders',
-    url: '/orders',
+    url: '/orders/overview',
     icon: ShoppingCart
   },
   {
     title: 'Analytics',
-    url: '/analytics',
+    url: '/analytics/overview',
     icon: ChartColumnDecreasing
   },
   {
     title: 'Reports',
-    url: '/reports',
+    url: '/reports/overview',
     icon: SquareChartGantt
   }
 ]
