@@ -79,6 +79,7 @@ const SalesChart = ({ className }: SalesChartProps) => {
   return (
     <DataChart
       title='Sales Growth'
+      label='Amount'
       chart={{ data: sales, existYears, selectedYear }}
       className={className}
     />

@@ -10,6 +10,8 @@ import { cn } from '@/lib/utils'
 import { MonthType } from '@/lib/types/types'
 import {
   ChartContainer,
+  ChartLegend,
+  ChartLegendContent,
   ChartTooltip,
   ChartTooltipContent,
   type ChartConfig
@@ -37,11 +39,12 @@ interface IChartData {
 
 type DataChartProps = {
   title: string
+  label: string
   className?: string
   chart: IChartData
 }
 
-const DataChart = ({ title, className, chart }: DataChartProps) => {
+const DataChart = ({ title, label, className, chart }: DataChartProps) => {
   const isMobile = useIsMobile()
   const isDesktop = useIsDesktop()
 
@@ -50,7 +53,7 @@ const DataChart = ({ title, className, chart }: DataChartProps) => {
 
   const chartConfig = {
     amount: {
-      label: 'Amount',
+      label: label,
       color: 'hsl(var(--chart-1))'
     }
   } satisfies ChartConfig
@@ -133,6 +136,7 @@ const DataChart = ({ title, className, chart }: DataChartProps) => {
           )}
 
           <ChartTooltip content={<ChartTooltipContent />} />
+          <ChartLegend content={<ChartLegendContent />} />
           <Bar dataKey='amount' fill='var(--color-amount)' radius={2} />
         </BarChart>
       </ChartContainer>
