@@ -9,9 +9,9 @@ import {
   fetchAllUser
 } from '@/lib/api/services'
 import { IOrderJson, IProductJson, IUserJson } from '@/lib/types/json'
-import { cn, filterDataByMonth, formatToRupiah } from '@/lib/utils'
-import { useSidebar } from '@/components/ui/sidebar'
-import DashboardSummaryCard from './dashboard-summary-card'
+import { filterDataByMonth, formatToRupiah } from '@/lib/utils'
+import SummaryCard from '@/components/summary/summary-card'
+import Summary from '@/components/summary/summary'
 
 type SummaryType = {
   total: number
@@ -26,7 +26,6 @@ interface ISummary {
 }
 
 const DashboardSummary = () => {
-  const { open } = useSidebar()
   const [summary, setSummary] = useState<ISummary>({
     user: {
       total: 0,
@@ -172,36 +171,32 @@ const DashboardSummary = () => {
   }, [])
 
   return (
-    <div
-      className={cn('grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4', {
-        'md:grid-cols-3 lg:grid-cols-4': !open
-      })}
-    >
-      <DashboardSummaryCard
+    <Summary>
+      <SummaryCard
         title='Total Sales'
         description={formatToRupiah(summary.sale.total)}
         growth={{ amount: summary.sale.growth || 0, format: 'percentage' }}
         icon={UsersRound}
       />
-      <DashboardSummaryCard
+      <SummaryCard
         title='Total Users'
         description={summary.user.total.toString()}
         growth={{ amount: summary.user.growth || 0, format: 'percentage' }}
         icon={UsersRound}
       />
-      <DashboardSummaryCard
+      <SummaryCard
         title='Total Products'
         description={summary.product.total.toString()}
         growth={{ amount: summary.product.growth || 0, format: 'count' }}
         icon={Boxes}
       />
-      <DashboardSummaryCard
+      <SummaryCard
         title='Total Orders'
         description={summary.order.total.toString()}
         growth={{ amount: summary.order.growth || 0, format: 'percentage' }}
         icon={ShoppingCart}
       />
-    </div>
+    </Summary>
   )
 }
 
