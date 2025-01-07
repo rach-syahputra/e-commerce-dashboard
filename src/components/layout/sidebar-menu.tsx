@@ -77,20 +77,23 @@ const AppSidebarMenu = () => {
               </SidebarMenuButton>
             </SidebarMenuItem>
           )}
-          {managementItems.map((item) => (
-            <SidebarMenuItem key={item.title}>
-              <SidebarMenuButton
-                asChild
-                className='py-6'
-                isActive={pathname === item.url}
-              >
-                <Link href={item.url} aria-label={`${item.title} page`}>
-                  <item.icon />
-                  <span>{item.title}</span>
-                </Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-          ))}
+          {managementItems.map((item) => {
+            const isActive =
+              item.url === '/'
+                ? pathname === '/'
+                : pathname.startsWith(item.url)
+
+            return (
+              <SidebarMenuItem key={item.title}>
+                <SidebarMenuButton asChild isActive={isActive} className='py-6'>
+                  <Link href={item.url} aria-label={`${item.title} page`}>
+                    <item.icon />
+                    <span>{item.title}</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            )
+          })}
         </SidebarMenu>
       </SidebarGroupContent>
     </SidebarGroup>
