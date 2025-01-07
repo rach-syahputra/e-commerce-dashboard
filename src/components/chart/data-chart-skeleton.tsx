@@ -2,11 +2,11 @@ import { cn } from '@/lib/utils'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Card, CardHeader } from '@/components/ui/card'
 
-type SalesChartSkeletonProps = {
+type ChartSkeletonProps = {
   className?: string
 }
 
-const SalesChartSkeleton = ({ className }: SalesChartSkeletonProps) => {
+const ChartSkeleton = ({ className }: ChartSkeletonProps) => {
   return (
     <Card className={cn('p-4 md:p-6', className)}>
       <CardHeader className='mb-4 p-0'>
@@ -30,4 +30,4 @@ const SalesChartSkeleton = ({ className }: SalesChartSkeletonProps) => {
   )
 }
 
-export default SalesChartSkeleton
+export default ChartSkeleton
