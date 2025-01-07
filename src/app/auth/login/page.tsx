@@ -16,7 +16,7 @@ import {
   FormMessage
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
-import FormErrorMessage from '../_components/form-error-message'
+import FormErrorMessage from '@/components/form-error-message'
 
 const formSchema = z.object({
   email: z
