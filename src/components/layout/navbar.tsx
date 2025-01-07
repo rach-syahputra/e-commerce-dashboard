@@ -20,7 +20,20 @@ import { SidebarTrigger } from '../ui/sidebar'
 export function AppNavbar() {
   const pathname = usePathname()
   const isMobile = useIsMobile()
-  const pageHeader = pathname.split('/').pop() || 'dashboard'
+
+  const getPageHeader = () => {
+    if (pathname === '/') return 'dashboard'
+    if (pathname.startsWith('/users')) return 'users'
+    if (pathname.startsWith('/products')) return 'products'
+    if (pathname.startsWith('/categories')) return 'categories'
+    if (pathname.startsWith('/orders')) return 'orders'
+    if (pathname.startsWith('/analytics')) return 'analytics'
+    if (pathname.startsWith('/reports')) return 'reports'
+
+    return ''
+  }
+
+  const pageHeader = getPageHeader()
 
   return (
     <NavigationMenu className='sticky top-0 h-14 w-full justify-between border-b bg-background px-4'>
