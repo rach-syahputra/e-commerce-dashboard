@@ -1,7 +1,7 @@
 import { Card, CardDescription, CardHeader } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 
-const DashboardSummaryCardSkeleton = () => {
+const SummaryCardSkeleton = () => {
   return (
     <Card>
       <CardHeader>
@@ -20,4 +20,4 @@ const DashboardSummaryCardSkeleton = () => {
   )
 }
 
-export default DashboardSummaryCardSkeleton
+export default SummaryCardSkeleton

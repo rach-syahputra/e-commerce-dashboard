@@ -1,17 +1,12 @@
 import { ForwardRefExoticComponent, RefAttributes } from 'react'
 import { LucideProps } from 'lucide-react'
 
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle
-} from '../../../components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card'
 import Paragraph from '@/components/paragraph/paragraph'
 import SubParagraph from '@/components/paragraph/sub-paragraph'
-import DashboardSummaryCardSkeleton from './loading/dashboard-summary-card-skeleton'
+import SummaryCardSkeleton from './summary-card-skeleton'
 
-type DashboardSummaryCardProps = {
+type SummaryCardProps = {
   title: string
   description: string
   growth: {
@@ -23,7 +18,7 @@ type DashboardSummaryCardProps = {
   >
 }
 
-const DashboardSummaryCard = (props: DashboardSummaryCardProps) => {
+const SummaryCard = (props: SummaryCardProps) => {
   return props.description && props.growth.amount ? (
     <Card>
       <CardHeader>
@@ -50,7 +45,7 @@ const DashboardSummaryCard = (props: DashboardSummaryCardProps) => {
           </CardDescription>
         ) : (
           <CardDescription>
-            <SubParagraph className='text-success dark:text-success text-xs'>
+            <SubParagraph className='text-xs text-success dark:text-success'>
               +{props.growth.amount} this month
             </SubParagraph>
           </CardDescription>
@@ -58,8 +53,8 @@ const DashboardSummaryCard = (props: DashboardSummaryCardProps) => {
       </CardHeader>
     </Card>
   ) : (
-    <DashboardSummaryCardSkeleton />
+    <SummaryCardSkeleton />
   )
 }
 
-export default DashboardSummaryCard
+export default SummaryCard
