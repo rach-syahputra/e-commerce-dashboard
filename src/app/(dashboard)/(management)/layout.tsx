@@ -19,10 +19,6 @@ export default function ManagementLayout({
     {
       href: '/users/record',
       label: 'Record'
-    },
-    {
-      href: '/users/create',
-      label: 'Create'
     }
   ]
 
