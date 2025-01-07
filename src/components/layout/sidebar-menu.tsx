@@ -26,36 +26,43 @@ import { usePathname } from 'next/navigation'
 const managementItems = [
   {
     title: 'Dashboard',
+    baseUrl: '/',
     url: '/',
     icon: LayoutDashboard
   },
   {
     title: 'Users',
+    baseUrl: '/users',
     url: '/users/overview',
     icon: UserRound
   },
   {
     title: 'Products',
+    baseUrl: '/products',
     url: '/products/overview',
     icon: Boxes
   },
   {
     title: 'Categories',
+    baseUrl: '/categories',
     url: '/categories/overview',
     icon: StretchHorizontal
   },
   {
     title: 'Orders',
+    baseUrl: '/orders',
     url: '/orders/overview',
     icon: ShoppingCart
   },
   {
     title: 'Analytics',
+    baseUrl: '/analytics',
     url: '/analytics/overview',
     icon: ChartColumnDecreasing
   },
   {
     title: 'Reports',
+    baseUrl: '/reports',
     url: '/reports/overview',
     icon: SquareChartGantt
   }
@@ -79,9 +86,9 @@ const AppSidebarMenu = () => {
           )}
           {managementItems.map((item) => {
             const isActive =
-              item.url === '/'
+              item.baseUrl === '/'
                 ? pathname === '/'
-                : pathname.startsWith(item.url)
+                : pathname.startsWith(item.baseUrl)
 
             return (
               <SidebarMenuItem key={item.title}>
