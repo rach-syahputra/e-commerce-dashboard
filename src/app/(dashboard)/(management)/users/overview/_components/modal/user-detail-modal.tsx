@@ -10,7 +10,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
-import { UserTable } from '../table/user-columns'
+import { UserTable } from '../../../record/_components/table/user-columns'
 
 type UserDetailModalProps = {
   user: UserTable
