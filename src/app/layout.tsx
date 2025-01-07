@@ -3,6 +3,7 @@ import { Sora } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from '@/components/provider/theme-provider'
+import { Toaster } from '@/components/ui/toaster'
 
 const sora = Sora({
   variable: '--font-sora',
@@ -29,6 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
