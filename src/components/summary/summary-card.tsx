@@ -20,7 +20,7 @@ type SummaryCardProps = {
 
 const SummaryCard = (props: SummaryCardProps) => {
   return props.description && props.growth.amount ? (
-    <Card>
+    <Card className='h-fit'>
       <CardHeader>
         <div className='flex items-center justify-between'>
           <CardTitle className='text-sm font-normal'>{props.title}</CardTitle>
