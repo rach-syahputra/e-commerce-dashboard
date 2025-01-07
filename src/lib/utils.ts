@@ -56,7 +56,7 @@ export const formatDateForTable = (date: Date): string => {
     hour12: false
   })
     .format(date)
-    .replace(' at ', ',')
+    .replace(' at ', ', ')
 
   return formattedDate
 }
