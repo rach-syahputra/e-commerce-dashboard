@@ -73,3 +73,20 @@ export const fetchFilteredData = async (
 
   return await res.json()
 }
+
+export const fetchUpdateUser = async (
+  id: string,
+  data: {
+    name: string
+  }
+) => {
+  const res = await fetch(`${BASE_URL}/users/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ...data, updatedAt: new Date() })
+  })
+
+  return await res.json()
+}
