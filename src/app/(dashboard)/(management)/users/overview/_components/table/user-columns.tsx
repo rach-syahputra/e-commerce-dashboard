@@ -12,8 +12,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger
-} from '../../ui/dropdown-menu'
-import { Button } from '../../ui/button'
+} from '@/components/ui/dropdown-menu'
+import { Button } from '@/components/ui/button'
+import UserDetailModal from '../user-detail-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -147,7 +148,7 @@ export const userColumns: ColumnDef<UserTable>[] = [
 
       return (
         <div className='flex w-full items-center justify-center'>
-          <DropdownMenu modal={false}>
+          <DropdownMenu>
             <DropdownMenuTrigger className='border' asChild>
               <Button variant='ghost' className='h-8 w-8 p-0'>
                 <span className='sr-only'>Open menu</span>
@@ -162,7 +163,9 @@ export const userColumns: ColumnDef<UserTable>[] = [
                 Copy user ID
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>View detail</DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <UserDetailModal user={row.original} />
+              </DropdownMenuItem>
               <DropdownMenuItem className='text-destructive'>
                 Delete
               </DropdownMenuItem>
