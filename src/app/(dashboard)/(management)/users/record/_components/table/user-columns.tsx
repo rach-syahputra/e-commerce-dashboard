@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ArrowUpDown, MoreHorizontal } from 'lucide-react'
+import { MoreHorizontal } from 'lucide-react'
 import { ColumnDef } from '@tanstack/react-table'
 
 import { UserRoleType } from '@/lib/types/types'
@@ -78,7 +78,6 @@ export const userColumns: ColumnDef<UserTable>[] = [
           className='px-0 text-xs lg:text-sm'
         >
           Name
-          <ArrowUpDown />
         </Button>
       )
     }
@@ -93,7 +92,6 @@ export const userColumns: ColumnDef<UserTable>[] = [
           className='px-0 text-xs lg:text-sm'
         >
           Email
-          <ArrowUpDown />
         </Button>
       )
     }
@@ -108,7 +106,6 @@ export const userColumns: ColumnDef<UserTable>[] = [
           className='px-0 text-xs lg:text-sm'
         >
           Role
-          <ArrowUpDown />
         </Button>
       )
     }
@@ -122,8 +119,7 @@ export const userColumns: ColumnDef<UserTable>[] = [
           onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           className='px-0 text-xs lg:text-sm'
         >
-          CreatedAt
-          <ArrowUpDown />
+          Created At
         </Button>
       )
     }
@@ -137,8 +133,7 @@ export const userColumns: ColumnDef<UserTable>[] = [
           onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           className='px-0 text-xs lg:text-sm'
         >
-          UpdatedAt
-          <ArrowUpDown />
+          Updated At
         </Button>
       )
     }
