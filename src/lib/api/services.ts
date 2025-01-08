@@ -136,3 +136,11 @@ export const fetchUpdateProduct = async (
 
   return await res.json()
 }
+
+export const fetchDeleteProduct = async (id: string) => {
+  const res = await fetch(`${BASE_URL}/products/${id}`, {
+    method: 'DELETE'
+  })
+
+  return await res.json()
+}
