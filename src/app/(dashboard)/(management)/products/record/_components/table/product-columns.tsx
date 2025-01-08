@@ -62,7 +62,7 @@ export const productColumns: ColumnDef<UserTable>[] = [
         alt='User image'
         width={32}
         height={32}
-        className='ml-1.5 h-6 w-6 rounded-full bg-gray-200 lg:h-8 lg:w-8'
+        className='ml-0.5 h-10 w-10 rounded-sm bg-gray-200'
       />
     )
   },
