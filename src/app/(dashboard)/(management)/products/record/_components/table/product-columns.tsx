@@ -110,7 +110,7 @@ export const productColumns: ColumnDef<ProductTable>[] = [
           onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           className='w-full justify-start px-0 text-xs lg:text-sm'
         >
-          CategoryID
+          Category ID
         </Button>
       )
     },
@@ -161,7 +161,7 @@ export const productColumns: ColumnDef<ProductTable>[] = [
           onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           className='w-full justify-start px-0 text-xs lg:text-sm'
         >
-          CreatedAt
+          Created At
         </Button>
       )
     }
@@ -175,7 +175,7 @@ export const productColumns: ColumnDef<ProductTable>[] = [
           onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           className='w-full justify-start px-0 text-xs lg:text-sm'
         >
-          UpdatedAt
+          Updated At
         </Button>
       )
     }
