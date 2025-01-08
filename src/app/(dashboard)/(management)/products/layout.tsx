@@ -19,6 +19,10 @@ export default function ProductManagementLayout({
     {
       href: '/products/record',
       label: 'Record'
+    },
+    {
+      href: '/products/create',
+      label: 'Create'
     }
   ]
 
