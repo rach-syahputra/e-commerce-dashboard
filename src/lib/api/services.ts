@@ -1,3 +1,7 @@
+import { v4 as uuidv4 } from 'uuid'
+import { z } from 'zod'
+import { AddProductFormSchema } from '../types/form'
+
 const BASE_URL = 'http://localhost:3004'
 
 export const fetchUserByEmailAndPassword = async ({
@@ -86,6 +90,25 @@ export const fetchUpdateUser = async (
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ ...data, updatedAt: new Date() })
+  })
+
+  return await res.json()
+}
+
+export const fetchAddProduct = async (
+  data: z.infer<typeof AddProductFormSchema>
+) => {
+  const res = await fetch(`${BASE_URL}/products/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      ...data,
+      id: uuidv4(),
+      createdAt: new Date(),
+      updatedAt: new Date()
+    })
   })
 
   return await res.json()
