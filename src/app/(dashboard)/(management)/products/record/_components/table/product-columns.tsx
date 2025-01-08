@@ -13,10 +13,11 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
+import ProductDetailModal from '../modal/product-detail-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
-export type UserTable = {
+export type ProductTable = {
   id: string
   image: string
   name: string
@@ -28,7 +29,7 @@ export type UserTable = {
   updatedAt: string
 }
 
-export const productColumns: ColumnDef<UserTable>[] = [
+export const productColumns: ColumnDef<ProductTable>[] = [
   // ROW SELECTION
   // {
   //   id: 'select',
@@ -199,10 +200,10 @@ export const productColumns: ColumnDef<UserTable>[] = [
                 Copy product ID
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              {/* <DropdownMenuItem asChild>
-                <UserDetailModal user={row.original} />
-              </DropdownMenuItem>
               <DropdownMenuItem asChild>
+                <ProductDetailModal product={row.original} />
+              </DropdownMenuItem>
+              {/* <DropdownMenuItem asChild>
                 <EditUserModal user={row.original} />
               </DropdownMenuItem> */}
               <DropdownMenuItem className='text-destructive'>
