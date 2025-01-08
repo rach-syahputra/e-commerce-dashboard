@@ -15,6 +15,7 @@ import {
 import { Button } from '@/components/ui/button'
 import ProductDetailModal from '../modal/product-detail-modal'
 import EditProductModal from '../modal/edit-product-modal'
+import DeleteProductModal from '../modal/delete-product-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -207,8 +208,8 @@ export const productColumns: ColumnDef<ProductTable>[] = [
               <DropdownMenuItem asChild>
                 <EditProductModal product={row.original} />
               </DropdownMenuItem>
-              <DropdownMenuItem className='text-destructive'>
-                Delete
+              <DropdownMenuItem asChild className='text-destructive'>
+                <DeleteProductModal id={row.original.id} />
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
