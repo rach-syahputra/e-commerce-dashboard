@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useToast } from '@/hooks/use-toast'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { UserTable } from '../../record/_components/table/user-columns'
+import { UserTable } from './table/user-columns'
 import { fetchUpdateUser } from '@/lib/api/services'
 import FormErrorMessage from '@/components/form-error-message'
 import {

@@ -14,8 +14,8 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
-import UserDetailModal from '../../../overview/_components/modal/user-detail-modal'
-import EditUserModal from '../../../overview/_components/modal/edit-user-modal'
+import UserDetailModal from '../modal/user-detail-modal'
+import EditUserModal from '../modal/edit-user-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
