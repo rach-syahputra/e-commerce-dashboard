@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid'
 import { z } from 'zod'
-import { AddProductFormSchema } from '../types/form'
+import { AddProductFormSchema, EditProductFormSchema } from '../types/form'
 
 const BASE_URL = 'http://localhost:3004'
 
@@ -109,6 +109,21 @@ export const fetchAddProduct = async (
       createdAt: new Date(),
       updatedAt: new Date()
     })
+  })
+
+  return await res.json()
+}
+
+export const fetchUpdateProduct = async (
+  id: string,
+  data: z.infer<typeof EditProductFormSchema>
+) => {
+  const res = await fetch(`${BASE_URL}/products/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ...data, updatedAt: new Date() })
   })
 
   return await res.json()
