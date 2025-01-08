@@ -16,6 +16,7 @@ import {
 import { Button } from '@/components/ui/button'
 import UserDetailModal from '../modal/user-detail-modal'
 import EditUserModal from '../modal/edit-user-modal'
+import DeleteUserModal from '../modal/delete-user-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -170,8 +171,9 @@ export const userColumns: ColumnDef<UserTable>[] = [
               <DropdownMenuItem asChild>
                 <EditUserModal user={row.original} />
               </DropdownMenuItem>
-              <DropdownMenuItem className='text-destructive'>
-                Delete
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild className='text-destructive'>
+                <DeleteUserModal id={row.original.id} />
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
