@@ -95,6 +95,14 @@ export const fetchUpdateUser = async (
   return await res.json()
 }
 
+export const fetchDeleteUser = async (id: string) => {
+  const res = await fetch(`${BASE_URL}/users/${id}`, {
+    method: 'DELETE'
+  })
+
+  return await res.json()
+}
+
 export const fetchAddProduct = async (
   data: z.infer<typeof AddProductFormSchema>
 ) => {
